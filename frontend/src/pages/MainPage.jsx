@@ -1,10 +1,13 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
+import SideBar from "../components/SideBar";
 
 export default function MainPage() {
     return (
         <div className="App">
+            <SideBar />
+            <div className="Page">
             <Header />
             <div className="container">
                 <br></br>
@@ -102,56 +105,65 @@ export default function MainPage() {
                 </div>
                 <br></br>
                 <h2>Преимущества и недостатки профессии Python-разработчика</h2>
-                <div className="list-group">
-                  <div className="list-group-item list-group-item-action list-group-item-success">
-                    <div className="d-flex w-100 justify-content-between">
-                      <h5 className="mb-1 fs-4">Высокая востребованность</h5>
+                <ul class="list-group list-group-horizontal">
+                  <li class="list-group-item">
+                      <div className="list-group">
+                      <div className="list-group-item list-group-item-action list-group-item-success">
+                        <div className="d-flex w-100 justify-content-between">
+                          <h5 className="mb-1 fs-4">Высокая востребованность</h5>
+                        </div>
+                        <p className="mb-1 fs-5">Python входит в топ-5 самых популярных языков программирования, и спрос на специалистов продолжает расти.</p>
+                      </div>
+                      <div className="list-group-item list-group-item-action list-group-item-success">
+                        <div className="d-flex w-100 justify-content-between">
+                          <h5 className="mb-1 fs-4">Универсальность</h5>
+                        </div>
+                        <p className="mb-1 fs-5">Python подходит для решения широкого круга задач, что позволяет разработчику выбирать интересное направление.</p>
+                      </div>
+                      <div className="list-group-item list-group-item-action list-group-item-success">
+                        <div className="d-flex w-100 justify-content-between">
+                          <h5 className="mb-1 fs-4">Простота изучения</h5>
+                        </div>
+                        <p className="mb-1 fs-5">Python имеет понятный синтаксис, что делает его идеальным языком для начинающих программистов.</p>
+                      </div>
+                      <div className="list-group-item list-group-item-action list-group-item-success">
+                        <div className="d-flex w-100 justify-content-between">
+                          <h5 className="mb-1 fs-4">Большое сообщество</h5>
+                        </div>
+                        <p className="mb-1 fs-5">Python имеет активное сообщество разработчиков, что упрощает поиск решений и обмен опытом.</p>
+                      </div>
+                      <div className="list-group-item list-group-item-action list-group-item-success">
+                        <div className="d-flex w-100 justify-content-between">
+                          <h5 className="mb-1 fs-4">Высокая зарплата</h5>
+                        </div>
+                        <p className="mb-1 fs-5">Python-разработчики получают competitive зарплаты, особенно в области Data Science и машинного обучения.</p>
+                      </div>
                     </div>
-                    <p className="mb-1 fs-5">Python входит в топ-5 самых популярных языков программирования, и спрос на специалистов продолжает расти.</p>
-                  </div>
-                  <div className="list-group-item list-group-item-action list-group-item-success">
-                    <div className="d-flex w-100 justify-content-between">
-                      <h5 className="mb-1 fs-4">Универсальность</h5>
+                  </li>
+                  <li class="list-group-item">
+                    <div className="list-group">
+                      <div className="list-group-item list-group-item-action list-group-item-danger">
+                        <div className="d-flex w-100 justify-content-between">
+                          <h5 className="mb-1 fs-4">Конкуренция</h5>
+                        </div>
+                        <p className="mb-1 fs-5">Из-за популярности Python конкуренция среди начинающих разработчиков достаточно высока.</p>
+                      </div>
+                      <div className="list-group-item list-group-item-action list-group-item-danger">
+                        <div className="d-flex w-100 justify-content-between">
+                          <h5 className="mb-1 fs-4">Ограничения в производительности</h5>
+                        </div>
+                        <p className="mb-1 fs-5">Python не всегда подходит для задач, требующих высокой производительности, из-за своей интерпретируемой природы.</p>
+                      </div>
+                      <div className="list-group-item list-group-item-action list-group-item-danger">
+                        <div className="d-flex w-100 justify-content-between">
+                          <h5 className="mb-1 fs-4">Необходимость постоянного обучения</h5>
+                        </div>
+                        <p className="mb-1 fs-5">IT-сфера быстро развивается, и Python-разработчику нужно постоянно изучать новые технологии и инструменты.</p>
+                      </div>
                     </div>
-                    <p className="mb-1 fs-5">Python подходит для решения широкого круга задач, что позволяет разработчику выбирать интересное направление.</p>
-                  </div>
-                  <div className="list-group-item list-group-item-action list-group-item-success">
-                    <div className="d-flex w-100 justify-content-between">
-                      <h5 className="mb-1 fs-4">Простота изучения</h5>
-                    </div>
-                    <p className="mb-1 fs-5">Python имеет понятный синтаксис, что делает его идеальным языком для начинающих программистов.</p>
-                  </div>
-                  <div className="list-group-item list-group-item-action list-group-item-success">
-                    <div className="d-flex w-100 justify-content-between">
-                      <h5 className="mb-1 fs-4">Большое сообщество</h5>
-                    </div>
-                    <p className="mb-1 fs-5">Python имеет активное сообщество разработчиков, что упрощает поиск решений и обмен опытом.</p>
-                  </div>
-                  <div className="list-group-item list-group-item-action list-group-item-success">
-                    <div className="d-flex w-100 justify-content-between">
-                      <h5 className="mb-1 fs-4">Высокая зарплата</h5>
-                    </div>
-                    <p className="mb-1 fs-5">Python-разработчики получают competitive зарплаты, особенно в области Data Science и машинного обучения.</p>
-                  </div>
-                  <div className="list-group-item list-group-item-action list-group-item-danger">
-                    <div className="d-flex w-100 justify-content-between">
-                      <h5 className="mb-1 fs-4">Конкуренция</h5>
-                    </div>
-                    <p className="mb-1 fs-5">Из-за популярности Python конкуренция среди начинающих разработчиков достаточно высока.</p>
-                  </div>
-                  <div className="list-group-item list-group-item-action list-group-item-danger">
-                    <div className="d-flex w-100 justify-content-between">
-                      <h5 className="mb-1 fs-4">Ограничения в производительности</h5>
-                    </div>
-                    <p className="mb-1 fs-5">Python не всегда подходит для задач, требующих высокой производительности, из-за своей интерпретируемой природы.</p>
-                  </div>
-                  <div className="list-group-item list-group-item-action list-group-item-danger">
-                    <div className="d-flex w-100 justify-content-between">
-                      <h5 className="mb-1 fs-4">Необходимость постоянного обучения</h5>
-                    </div>
-                    <p className="mb-1 fs-5">IT-сфера быстро развивается, и Python-разработчику нужно постоянно изучать новые технологии и инструменты.</p>
-                  </div>
-                </div>
+                  </li>
+                </ul>
+                
                 <br></br>
                 <h2>Как стать Python-разработчиком?</h2>
                 <ul className="list-group list-group-flush">
@@ -168,6 +180,7 @@ export default function MainPage() {
             </div>
             </div>
             <Footer />
+        </div>
         </div>
     )
 }
