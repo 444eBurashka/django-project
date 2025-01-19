@@ -29,9 +29,15 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 ALLOWED_HOSTS = [
     "217.114.14.27", 
-    "127.0.0.1"
+    "127.0.0.1",
+    "profsort.ru"
 ]
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True
 
 # Application definition
 
