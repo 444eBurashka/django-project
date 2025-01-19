@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'vactables',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -73,11 +75,18 @@ WSGI_APPLICATION = 'profsort.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+DATABASES = { 
+    'default': { 
+        'ENGINE': 'django.db.backends.postgresql', 
+        'NAME': 'default_db', 
+        'USER': 'cloud_user', 
+        'PASSWORD': '0Q*&ZxEgzjXi', 
+        'HOST': 'keranabig.beget.app', 
+        'PORT': '5432',
+        'target_session_attrs': 'read-write',
+        'sslmode': "disable",
+        
+     } 
 }
 
 
