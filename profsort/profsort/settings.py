@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-e^bp_4$gd#$846*+u&w#clf#_(072m-mci0_7#_tu9sg$k%=tp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "217.114.14.27"
+]
 
 
 # Application definition
@@ -85,7 +87,7 @@ DATABASES = {
         'PORT': '5432',
         'target_session_attrs': 'read-write',
         'sslmode': "disable",
-        
+
      } 
 }
 
