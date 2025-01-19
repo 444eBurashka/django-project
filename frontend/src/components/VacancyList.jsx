@@ -5,7 +5,7 @@ export default function VacancyList() {
     const [vacancies, setVacancies] = useState([]);
 
     useEffect(() => {
-        fetch('https://api.hh.ru/vacancies?text=Python')
+        fetch('https://api.hh.ru/vacancies?text=Python&period=1&per_page=10')
             .then(response => response.json())
             .then(data => {
                 const sortedVacancies = data.items.sort((a, b) => {
