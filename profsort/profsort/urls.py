@@ -18,11 +18,11 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 
-import settings
+from .settings import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('vactables.urls'))
 ]
 
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(STATIC_URL, document_root=STATIC_ROOT)
