@@ -22,7 +22,7 @@ from .settings import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('vactables.urls'))
+    path('api/', include('vactables.urls'))
 ]
 
 urlpatterns += static(STATIC_URL, document_root=STATIC_ROOT)
