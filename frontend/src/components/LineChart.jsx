@@ -38,7 +38,7 @@ export default function LineChart() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://217.114.14.27:8000/api/general/');
+      const response = await fetch('https://profsort.ru/api/general/');
       if (!response.ok) {
         throw new Error('Ошибка при загрузке данных');
       }
